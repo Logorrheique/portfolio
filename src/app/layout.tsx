@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const title = "Arthur Couteau — Développeur Full-Stack & DevOps";
+const title = "Arthur Couteau — Full-Stack & DevOps Engineer";
 const description =
-  "Développeur full-stack et DevOps : TypeScript, React, Node.js, exploitation et mise en production. Région parisienne, télétravail.";
+  "Full-stack and DevOps engineer: TypeScript, React, Node.js, Python — backend, operations and production. Paris area, open to remote.";
 // On Vercel, use the real production domain so social-preview URLs are canonical.
 const url = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     title,
     description,
     type: "website",
-    locale: "fr_FR",
+    locale: "en_US",
     url,
     images: [
       {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Arthur Couteau — Développeur Full-Stack & DevOps",
+        alt: "Arthur Couteau — Full-Stack & DevOps Engineer",
       },
     ],
   },
@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body>{children}</body>
     </html>
   );
