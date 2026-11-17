@@ -17,6 +17,9 @@ body {
 }
 
 .notion-page {
+  /* Widen content: the Notion page isn't set to "Full width", so react-notion-x
+     defaults --notion-max-width to 720px. Override it for a roomier CV layout. */
+  --notion-max-width: min(1180px, 92vw) !important;
   padding-left: calc(min(12px, 8vw)) !important;
   padding-right: calc(min(12px, 8vw)) !important;
 }
